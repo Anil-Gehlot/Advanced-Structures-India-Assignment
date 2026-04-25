@@ -1,0 +1,211 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  color: #111;
+  background: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.pageHeader {
+  margin-bottom: 16px;
+}
+
+.pageTitle {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.pageSubtitle {
+  margin: 6px 0 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.categorySection {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 14px;
+  background: #fff;
+}
+
+.categoryHeader {
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #efefef;
+}
+
+.categoryTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cardGrid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.demoCard {
+  display: block;
+  padding: 14px 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  color: inherit;
+  text-decoration: none;
+  background: #fff;
+}
+
+.demoCard:hover {
+  border-color: #cfcfcf;
+}
+
+.productCard {
+  display: block;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+}
+
+.productCard:hover {
+  border-color: #cfcfcf;
+}
+
+.productImageWrap {
+  height: 140px;
+  background: #f6f6f6;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productInfo {
+  padding: 10px 12px;
+}
+
+.productName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.detailsLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .detailsLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detailsImageWrap {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.detailsImage {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.detailsPanel {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 14px;
+  background: #fff;
+}
+
+.propsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.propRow {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+  padding: 10px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .propRow {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+.propLabel {
+  font-size: 13px;
+  color: #555;
+  font-weight: 600;
+}
+
+.propValue {
+  font-size: 13px;
+  color: #111;
+}
