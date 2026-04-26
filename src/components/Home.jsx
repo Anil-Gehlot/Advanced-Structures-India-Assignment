@@ -2,7 +2,6 @@ import CategorySection from './CategorySection.jsx'
 import { products } from '../data/products.js'
 
 
-console.log(products.length)
 // It takes the full products list and groups items by their category (Cars, Phones, Bikes, Computers) 
 // so the Home page can render separate sections per category.
 // it will return categories as keys and all items as values in an array.
