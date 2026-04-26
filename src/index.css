@@ -2,7 +2,7 @@
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.5;
   color: #111;
-  background: #fff;
+  background: #e9ebf0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,6 +14,8 @@
 
 body {
   margin: 0;
+  min-height: 100svh;
+  background: #e9ebf0;
 }
 
 img {
@@ -24,7 +26,7 @@ img {
 .page {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 24px 16px 40px;
 }
 
 .pageHeader {
@@ -50,10 +52,11 @@ img {
 }
 
 .categorySection {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #dcdce4;
   border-radius: 12px;
-  padding: 14px;
-  background: #fff;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
 }
 
 .categoryHeader {
@@ -102,12 +105,13 @@ img {
 
 .productCard {
   display: block;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #e2e2ea;
   border-radius: 12px;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
-  background: #fff;
+  background: #fcfcfd;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
 .productCard:hover {
@@ -116,7 +120,7 @@ img {
 
 .productImageWrap {
   height: 140px;
-  background: #f6f6f6;
+  background: #ececf0;
 }
 
 .productImage {
@@ -158,23 +162,27 @@ img {
 }
 
 .detailsImageWrap {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #dcdce4;
   border-radius: 12px;
   overflow: hidden;
-  background: #fff;
+  background: #ffffff;
+  display: flex;
+  min-height: 320px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
 }
 
 .detailsImage {
   width: 100%;
-  height: 320px;
+  height: 100%;
   object-fit: cover;
 }
 
 .detailsPanel {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #dcdce4;
   border-radius: 12px;
   padding: 14px;
-  background: #fff;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
 }
 
 .propsList {
